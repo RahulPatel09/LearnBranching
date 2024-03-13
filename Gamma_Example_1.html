@@ -1,0 +1,24 @@
+<html>
+<body>
+   <p>Including inline JavaScript inside an HTML page to invoke a function</p>
+   <div>
+   <button type = "button" onclick ="(function(){
+      // JavaScript Code to Change the Inner Text
+      const root = document.getElementById('root')
+      root.innerHTML = 'This Text is Changed By Inline JavaScript!'
+   })()"> Change Text </button>
+   <button type = "button" onclick = "(function(){
+      // JavaScript Code to Change the Background Color
+      const root = document.getElementById('root')
+      root.style.backgroundColor = '#85f8d5'
+   })()"> Change Background </button>
+   <button type = "button" onclick = "(function(){
+      // JavaScript Code to Rest the Changes
+      const root = document.getElementById('root')
+      root.innerHTML = 'Welcome to Tutorialspoint!'
+      root.style.backgroundColor = '#ffffff'
+   })()"> Reset Changes </button>
+   </div>
+   <div id="root" style="border: 1px solid black; margin-top: 10px; padding: 10px;">Welcome to Tutorialspoint!</div>
+</body>
+</html>
